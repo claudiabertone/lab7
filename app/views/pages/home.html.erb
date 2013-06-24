@@ -1,0 +1,12 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% provide :title, 'Home' %>
+
+<div class="center hero-unit">
+  <h1>Welcome to SWorD</h1>
+
+  <h2>
+    Sign up or login to start using SWorD.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>

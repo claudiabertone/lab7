@@ -1,0 +1,13 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% provide :title, @user.name %>
+
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>       <%#questa è la chiamata all'helper users_helper. Gravatar è un servizio web vorrebbe sostituire la gestione delle foto dei profili di ogni sito%>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
